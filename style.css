@@ -1,0 +1,97 @@
+body {
+    font-family: "Jersey 15", serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    color: white;
+    margin: 0;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+header{
+    text-align: center;
+    margin-bottom: 40px; /* Adds space below header */
+    margin-top: 100px;
+
+    
+}
+h1 {
+    color: rgb(245, 40, 166);
+    font-size: 2.5em;
+    font-family: "Major Mono Display", serif;
+    line-height: 1; /* Reduce line height to bring text closer */
+    display: inline-block; /* Ensure <h1> and <b> align neatly */
+    margin-left: 50px;
+}
+
+.track{
+    color: rgb(255, 176, 193);
+}
+
+b {
+    color: rgb(167, 152, 255);
+    font-family: "League Script", serif;
+    text-shadow: 
+        0 0 5px rgba(155, 255, 250, 0.6),   /* Subtle light glow */
+        0 0 10px rgba(142, 247, 255, 0.4),  /* Slightly larger glow */
+        0 0 15px rgba(137, 255, 206, 0.3);  /* Softest outer glow */
+}
+
+.music-player {
+    text-align: center;
+    margin-top: 50px; /* Adds space above music player */
+
+}
+
+.cd-container {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    margin-bottom: 20px; /* Adds space between CD and button */
+    position: relative;
+    background-color: transparent;
+    border-radius: 50%; /* Circular container */
+    box-shadow: 0 0 10px 4px rgba(245, 40, 166, 0.384); /* Soft lavender fade */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and glow */
+}
+
+.cd-container:hover {
+    transform: scale(1.05); /* Slightly increases the size */
+    box-shadow: 0 0 10px 3px rgba(67, 49, 230, 0.8); /* Glowing effect on hover */
+}
+
+.play-button {
+    font-family: "Jersey 15", serif;
+    background-color: rgb(167, 152, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 50px;
+}
+
+.play-button:hover {
+    background-color: #8574e9;
+    transform: scale(1.05); /* Adds a subtle zoom effect */
+}
+
+.cd {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: transform 0.5s ease-in-out;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
